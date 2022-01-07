@@ -28,4 +28,8 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
+  notify {'a': message => 'hello'}
+  package { 'nano':
+    ensure => installed,
+  }
 }
