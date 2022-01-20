@@ -29,7 +29,7 @@ node default {
   # Example:
   #   class { 'my_class': }
   notify {'hello': message => 'world'}
-  # package { 'nano':
-  #   ensure => installed,
-  # }
+  package { 'vim':
+    ensure => removed,
+  }
 }
